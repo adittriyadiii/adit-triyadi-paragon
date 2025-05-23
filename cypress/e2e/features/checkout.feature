@@ -1,6 +1,6 @@
 Feature: e2e testing checkout
 
-  Scenario: Verify user successfully login and checkout with eligible promo
+  Scenario:  Verify user successfully applied promo with eligible product and price
     Given User visit "recruitment-staging-queenbee.paradev.io"
     And User click masuk button on landing page
     And User input phone number "08999999999" on login page

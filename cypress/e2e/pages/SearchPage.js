@@ -1,7 +1,7 @@
 export class SearchPage {
   // Locators
   BUTTON_SEARCH_BAR = ".chakra-input";
-  PRODUCT_LANDING_PAGE = ".styles_card-body-h2-grid__lzKGQ";
+  SEARCH_RESULT_PRODUCT_PAGE = ".styles_card-body-h2-grid__lzKGQ";
   /**
    * Method
    */
@@ -10,6 +10,6 @@ export class SearchPage {
     cy.get(this.BUTTON_SEARCH_BAR).type("{enter}");
   }
   chooseProduct(productName) {
-    cy.get(this.PRODUCT_LANDING_PAGE).contains(productName).first().click();
+    cy.get(this.SEARCH_RESULT_PRODUCT_PAGE).contains(productName).first().click();
   }
 }
