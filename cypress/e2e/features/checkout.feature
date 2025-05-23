@@ -8,4 +8,5 @@ Feature: e2e testing checkout
     And User click masuk button on login page
     And User should direct to home page
     And User click "Search" button navbar on home page
-    And User search product "Collagen drink" on search page
+    And User search product "Fitclair Collagen Drink" on search page
+    And User click "Fitclair Collagen Drink" on search result page
