@@ -6,8 +6,6 @@ export class LandingPage {
    * Method
    */
   clickMasukButton() {
-    cy.get(this.BUTTON_MASUK)
-      .should("be.visible") // memastikan elemen terlihat
-      .click(); // aksi klik
+    cy.get(this.BUTTON_MASUK).should("be.visible").click();
   }
 }
