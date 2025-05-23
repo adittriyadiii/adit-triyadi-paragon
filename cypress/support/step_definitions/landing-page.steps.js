@@ -13,10 +13,6 @@ When("User visit {string}", (url) => {
   });
 });
 
-When("User click masuk button on navbar", () => {
+When("User click masuk button on landing page", () => {
   landingPage.clickMasukButton();
-});
-
-When("User should direct to home page", () => {
-  cy.location("pathname").should("eq", "/home");
 });
